@@ -6,3 +6,166 @@ Green: #00B172
 White: #FFF
 
 */
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.logo{
+    height: 15%;
+    width: 15%;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.links li{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 18px;
+    list-style: none;
+}
+
+
+.landing-image{
+    display: block;
+    height: 550px;
+    width: auto;
+    background-image: url(/lab-css-spotify-clone/images/landing.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container h1{
+    padding-top: 150px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.container p{
+    font-size: 32;
+    font-weight: 100;
+    line-height: 0px;
+}
+
+.whats-on{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.whats-on img{
+    height: 100px;
+}
+
+
+.whats-on-title hr{
+    border: 2px solid #00B172;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.caracteristicas div{
+    width: 400px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caracteristicas h3{
+    color: #00B172;
+}
+
+.section-green{
+    background-color: #00B172;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-left{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 50px 0 50px 50px;
+}
+
+.logo-center{
+    max-width: 200px;
+    padding: 50px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-center img{
+    width: 100px;    
+}
+
+.image-right img{
+   max-width: 70%;
+   padding: 20%;
+}
+
+@media (max-width: 400px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        height: 50%;
+        width: 50%;
+    }
+    .links{
+        font-size: 16px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    .caracteristicas{
+        display: flex;
+        flex-direction: column;        
+    }
+    .section-green{
+        display: flex;
+        flex-direction: column;
+    }
+}
